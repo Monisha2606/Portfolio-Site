@@ -1,0 +1,116 @@
+<div class="container p-7">
+    <div class="row">
+      <!-- Side Nav -->
+      <div class="sidebar-nav">
+        <ul class="nav flex-column nav-pills w-100" id="skillsNav" role="tablist">
+          <li class="nav-item mb-2" role="presentation">
+            <button class="nav-link active" id="frontend-tab" data-bs-toggle="pill" data-bs-target="#frontend" type="button" role="tab">
+              User-Facing Tech
+            </button>
+          </li>
+          <li class="nav-item mb-2" role="presentation">
+            <button class="nav-link" id="backend-tab" data-bs-toggle="pill" data-bs-target="#backend" type="button" role="tab">
+              Logic & Architecture
+            </button>
+          </li>
+          <li class="nav-item mb-2" role="presentation">
+            <button class="nav-link" id="database-tab" data-bs-toggle="pill" data-bs-target="#databases" type="button" role="tab">
+              Data & Storage
+            </button>
+          </li>
+          <li class="nav-item mb-2" role="presentation">
+            <button class="nav-link" id="integration-tab" data-bs-toggle="pill" data-bs-target="#integration" type="button" role="tab">
+                API Integration
+            </button>
+          </li>
+          <li class="nav-item mb-2" role="presentation">
+            <button class="nav-link" id="tools-tab" data-bs-toggle="pill" data-bs-target="#tools" type="button" role="tab">
+                Tools & Practices
+            </button>
+          </li>
+          <li class="nav-item mb-2" role="presentation">
+            <button class="nav-link" id="tools-tab" data-bs-toggle="pill" data-bs-target="#other" type="button" role="tab">
+                Other Skills
+            </button>
+          </li>
+        </ul>
+      </div>
+  
+      <!-- Skills Grid -->
+      <div class="col-md-9">
+        <div class="tab-content" id="skillsTabContent">
+  
+          <!-- Frontend -->
+          <div class="tab-pane fade show active" id="frontend" role="tabpanel">
+            <div class="row g-4 text-center">
+              <div class="col-6 col-md-3" *ngFor="let skill of frontendSkills">
+                <div class="skill-box p-3 border rounded">
+                  <img [src]="skill.icon" alt="{{skill.name}}" class="img-fluid mb-2" style="height:60px;">
+                  <h6>{{ skill.name }}</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Backend -->
+          <div class="tab-pane fade" id="backend" role="tabpanel">
+            <div class="row g-4 text-center">
+              <div class="col-6 col-md-3" *ngFor="let skill of backendSkills">
+                <div class="skill-box p-3 border rounded">
+                  <img [src]="skill.icon" alt="{{skill.name}}" class="img-fluid mb-2" style="height:60px;">
+                  <h6>{{ skill.name }}</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Databases -->
+          <div class="tab-pane fade" id="databases" role="tabpanel">
+            <div class="row g-4 text-center">
+              <div class="col-6 col-md-3" *ngFor="let skill of databaseSkills">
+                <div class="skill-box p-3 border rounded">
+                  <img [src]="skill.icon" alt="{{skill.name}}" class="img-fluid mb-2" style="height:60px;">
+                  <h6>{{ skill.name }}</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="integration" role="tabpanel">
+            <div class="row g-4 text-center">
+              <div class="col-6 col-md-3" *ngFor="let skill of integrationSkills">
+                <div class="skill-box p-3 border rounded">
+                  <img [src]="skill.icon" alt="{{skill.name}}" class="img-fluid mb-2" style="height:60px;">
+                  <h6>{{ skill.name }}</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="tools" role="tabpanel">
+            <div class="row g-4 text-center">
+              <div class="col-6 col-md-3" *ngFor="let skill of toolSkills">
+                <div class="skill-box p-3 border rounded">
+                  <img [src]="skill.icon" alt="{{skill.name}}" class="img-fluid mb-2" style="height:60px;">
+                  <h6>{{ skill.name }}</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="other" role="tabpanel">
+            <div class="row g-4 text-center">
+              <div class="col-6 col-md-3" *ngFor="let skill of otherSkills">
+                <div class="skill-box p-3 border rounded">
+                  <img [src]="skill.icon" alt="{{skill.name}}" class="img-fluid mb-2" style="height:60px;">
+                  <h6>{{ skill.name }}</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  </div>
+  

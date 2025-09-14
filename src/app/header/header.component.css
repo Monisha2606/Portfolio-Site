@@ -1,0 +1,12 @@
+.accordion{
+    /* background-color:bisque; */
+    background-image: url('/assets/images/background.jpeg');
+    padding: 50px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    /* align-items: center; */
+    justify-content: right;
+    color: azure;
+}

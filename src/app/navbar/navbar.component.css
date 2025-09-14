@@ -1,0 +1,19 @@
+.navbar .nav-link {
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .navbar .nav-link.active {
+    background: none;             
+    border-bottom: 1px solid black; 
+    color: #1c03ff !important;      
+    border-radius: 0;             
+  }
+
+  .content{
+    background: linear-gradient(to right, rgb(106, 69, 69), rgb(24, 24, 24));
+    color: white;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  

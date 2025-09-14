@@ -1,0 +1,53 @@
+.carousel-inner img {
+    height: 400px;
+    object-fit: cover;
+  }
+
+  .carousel-img-wrapper {
+    height: 300px; /* fixed height for consistency */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: #f8f9fa; background padding color */
+    /* border-radius: 8px; */
+    overflow: hidden;
+  }
+  
+  .carousel-img {
+    width: 90%;        /* fills carousel width */
+    height: 100px;      /* fixed height */
+    object-fit: contain; /* shows whole image, may leave blank space */
+  }
+  
+  .carousel-caption-custom {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .carousel-caption-custom h5 {
+    font-weight: 600;
+  }
+  
+  .carousel-caption-custom p {
+    color: #ffffff;
+    font-size: 0.95rem;
+  }
+
+  .carousel-inner {
+    position: relative;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5%; /* narrower controls */
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-size: 100% 100%;
+    filter: brightness(0) invert(1); 
+  }
+  
+  

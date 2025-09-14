@@ -1,0 +1,36 @@
+<!-- Experience Section -->
+<section id="experience" class="py-5">
+    <div class="container">
+      @for(work of experience; track $index; let i = $index){
+        <div class="experience-item">
+          <div class="row align-items-start">
+            <div class="col-md-3 company-name">
+              {{ work.name }}
+            </div>
+    
+            <div class="col-md-6 company-desc">
+              <h5 class="role">{{ work.desc.role }}</h5> 
+              <div class="tech-icons d-flex flex-wrap gap-2">
+                @for(icon of work.tech; track $index; let i = $index){
+                  <img [src]="'assets/images/' + icon" [alt]="icon">
+                }
+              </div>
+              <ul>
+                @for(data of work.desc.content; track $index; let i = $index){
+                  <li>{{ data }}</li>
+                }
+              </ul>
+            </div>
+    
+            <div class="col-md-3 text-md-end company-year">
+              <span class="year">{{ work.year }}</span><br />
+              <span class="location">{{ work.location }}</span>
+            </div>
+          </div>
+          <hr />
+        </div>
+      }
+      
+    </div>
+  </section>
+  

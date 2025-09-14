@@ -1,0 +1,60 @@
+
+  
+  #experience h2 {
+    /* color: #000000; */
+    font-weight: bold;
+  }
+  
+  .experience-item {
+    padding: 20px 0;
+  }
+  
+  .company-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    /* color: #000000; */
+  }
+  
+  .company-desc {
+    font-size: 0.95rem;
+    /* color: #000000; */
+  }
+  
+  .company-desc .role {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    /* color: #000000; */
+  }
+  
+  .company-desc ul {
+    padding-left: 20px;
+    margin: 0;
+  }
+  
+  .company-desc li {
+    list-style: disc;
+    margin-bottom: 5px;
+  }
+  
+  .company-year {
+    font-size: 0.9rem;
+    /* color: #000000; */
+  }
+  
+  .company-year .year {
+    font-weight: 600;
+    /* color: #000000; */
+  }
+  
+  hr {
+    border: 0;
+    border-top: 1px solid #cdcccc;
+    margin: 20px 0;
+  }
+  
+  img{
+    max-width: 20px;
+    max-height: 20px;
+  }
+  
