@@ -1,7 +1,7 @@
 {
   "version": 2,
   "public": true,
-  "outputDirectory": "dist/portfolio-site/browser",
+  "outputDirectory": "dist/monisha-devfolio/browser",
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ]
